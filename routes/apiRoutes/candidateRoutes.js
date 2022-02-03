@@ -105,7 +105,7 @@ router.put("/candidate/:id", (req, res) => {
 });
 
 // Delete a candidate
-app.delete("/candidate/:id", (req, res) => {
+router.delete("/candidate/:id", (req, res) => {
   const sql = `DELETE FROM candidates WHERE id = ?`;
   const params = [req.params.id];
 
